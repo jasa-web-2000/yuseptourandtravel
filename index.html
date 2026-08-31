@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUSEP TOUR & TRAVEL | Travel Terpercaya Pangandaran - Banjarsari - Tasikmalaya</title>
+    <meta name="description"
+        content="YUSEP TOUR & TRAVEL — Layanan travel 24 jam, antar jemput alamat gratis, paket kilat. Rute lengkap & tarif terbaik.">
+
+    <meta property="og:title"
+        content="YUSEP TOUR & TRAVEL | Travel Terpercaya Pangandaran - Banjarsari - Tasikmalaya" />
+    <meta property="og:description"
+        content="YUSEP TOUR & TRAVEL — Layanan travel 24 jam, antar jemput alamat gratis, paket kilat. Rute lengkap & tarif terbaik." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yuseptourandtravel.com/" />
+    <meta property="og:image" content="https://yuseptourandtravel.com/logo.jpg" />
+
+    <link rel="apple-touch-icon" href="https://yuseptourandtravel.com/logo.jpg" />
+    <link rel="icon" size="16x16" href="https://yuseptourandtravel.com/logo.jpg" />
+    <link rel="icon" size="32x32" href="https://yuseptourandtravel.com/logo.jpg" />
+    <link rel="icon" size="180x180" href="https://yuseptourandtravel.com/logo.jpg" />
+    <link rel="shortcut icon" href="https://yuseptourandtravel.com/logo.jpg" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="YUSEP TOUR & TRAVEL" />
+    <link rel="canonical" href="https://yuseptourandtravel.com/" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0F172A;
+            --secondary: #B91C1C;
+            --accent: #F59E0B;
+            --light: #F8FAFC;
+            --dark: #020617;
+            --gold: #D4AF37;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #334155;
+            background: #fff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 1px 12px rgba(0, 0, 0, 0.06);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .nav-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 54px;
+            height: 54px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--primary), #1E293B);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--gold);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .logo-text h2 {
+            font-size: 17px;
+            color: var(--primary);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .logo-text p {
+            font-size: 11px;
+            color: #64748B;
+            margin-top: -2px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: #334155;
+            font-weight: 500;
+            font-size: 14px;
+            transition: 0.25s;
+        }
+
+        nav a:hover {
+            color: var(--secondary);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 26px;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        .mobile-nav {
+            display: none;
+            background: #fff;
+            padding: 8px 0;
+            border-top: 1px solid #eee;
+        }
+
+        .mobile-nav a {
+            display: block;
+            padding: 12px 22px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.92)),
+                url('https://images.unsplash.com/photo-1544620347-c41b94f4986a?w=1200') center/cover no-repeat;
+            padding: 150px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .badge-24jam {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245, 158, 11, 0.18);
+            color: var(--accent);
+            padding: 9px 22px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 28px;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 span {
+            color: var(--accent);
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 740px;
+            margin: 0 auto 35px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 34px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--secondary);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: #991B1B;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(185, 28, 28, 0.25);
+        }
+
+        .btn-outline {
+            border: 2px solid #fff;
+            color: #fff;
+            margin-left: 14px;
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: #fff;
+            color: var(--primary);
+        }
+
+        /* Section */
+        section {
+            padding: 75px 20px;
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-head h2 {
+            font-size: 30px;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-head h2::after {
+            content: '';
+            width: 75px;
+            height: 3px;
+            background: var(--secondary);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-head p {
+            color: #64748B;
+            margin-top: 18px;
+            max-width: 620px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 15px;
+        }
+
+        /* Layanan */
+        .layanan-wrap {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 26px;
+        }
+
+        .layanan-card {
+            background: #fff;
+            padding: 32px 24px;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+            text-align: center;
+            transition: 0.3s;
+            border: 1px solid #f1f5f9;
+        }
+
+        .layanan-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+            border-color: var(--accent);
+        }
+
+        .layanan-card i {
+            font-size: 44px;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .layanan-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .layanan-card p {
+            font-size: 14px;
+            color: #64748B;
+            line-height: 1.7;
+        }
+
+        /* Rute */
+        .rute-section {
+            background: #F8FAFC;
+        }
+
+        .rute-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 35px;
+        }
+
+        .rute-tab {
+            padding: 12px 26px;
+            border-radius: 50px;
+            background: #E2E8F0;
+            color: #334155;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 14px;
+        }
+
+        .rute-tab.active {
+            background: var(--primary);
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.2);
+        }
+
+        .rute-content {
+            display: none;
+        }
+
+        .rute-content.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(8px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        .rute-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 12px;
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .rute-item {
+            background: #fff;
+            padding: 15px 22px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 3px solid var(--accent);
+        }
+
+        .rute-item span:first-child {
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        .rute-item span:last-child {
+            color: #16A34A;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* Armada */
+        .armada-wrap {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 22px;
+        }
+
+        .armada-card {
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08);
+            background: #fff;
+            transition: 0.3s;
+        }
+
+        .armada-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+        }
+
+        .armada-card img {
+            width: 100%;
+            height: 175px;
+            object-fit: cover;
+        }
+
+        .armada-info {
+            padding: 18px;
+            text-align: center;
+        }
+
+        .armada-info h3 {
+            font-size: 16px;
+            color: var(--primary);
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .armada-info p {
+            font-size: 13px;
+            color: #64748B;
+        }
+
+        /* Form Pemesanan */
+        .pesan-section {
+            background: #F8FAFC;
+        }
+
+        .form-wrap {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 42px;
+            border-radius: 16px;
+            box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--primary);
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1.5px solid #E2E8F0;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 15px;
+            color: #334155;
+            transition: 0.25s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(15, 23, 42, 0.05);
+        }
+
+        .full {
+            grid-column: 1 / -1;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: var(--secondary);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #991B1B;
+            box-shadow: 0 6px 20px rgba(185, 28, 28, 0.25);
+        }
+
+        /* Pembayaran */
+        .pembayaran-wrap {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-top: 40px;
+        }
+
+        .pembayaran-card {
+            text-align: center;
+            padding: 28px 22px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 3px 14px rgba(15, 23, 42, 0.05);
+            border: 1px solid #f1f5f9;
+        }
+
+        .pembayaran-card i {
+            font-size: 34px;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        .pembayaran-card h4 {
+            font-size: 15px;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .pembayaran-card p {
+            font-size: 13px;
+            color: #64748B;
+        }
+
+        /* Kontak */
+        .kontak-wrap {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .kontak-card {
+            text-align: center;
+            padding: 32px 24px;
+        }
+
+        .kontak-card i {
+            font-size: 38px;
+            color: var(--secondary);
+            margin-bottom: 16px;
+        }
+
+        .kontak-card h3 {
+            font-size: 17px;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .kontak-card p {
+            font-size: 14px;
+            color: #64748B;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: #fff;
+            padding: 45px 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer p {
+            opacity: 0.7;
+            margin-top: 10px;
+        }
+
+        /* WhatsApp Melayang */
+        .wa-float {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 62px;
+            height: 62px;
+            background: #22C55E;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            box-shadow: 0 5px 20px rgba(34, 197, 94, 0.35);
+            z-index: 999;
+            transition: 0.3s;
+        }
+
+        .wa-float:hover {
+            transform: scale(1.15);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .armada-wrap {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .layanan-wrap,
+            .kontak-wrap,
+            .pembayaran-wrap {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 12px;
+                display: inline-block;
+            }
+
+            .armada-wrap {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .armada-wrap {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 100px 16px;
+            }
+
+            .form-wrap {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-wrap">
+            <a href="#" class="logo">
+                <div class="logo-icon">Y</div>
+                <div class="logo-text">
+                    <h2>YUSEP TOUR & TRAVEL</h2>
+                    <p>Travel Terpercaya — Pangandaran • Banjarsari • Tasikmalaya</p>
+                </div>
+            </a>
+            <nav id="desktopNav">
+                <a href="#beranda">Beranda</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#rute">Rute</a>
+                <a href="#armada">Armada</a>
+                <a href="#pesan">Pesan Tiket</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+            <div class="mobile-menu-btn" id="menuToggle"><i class="fas fa-bars"></i></div>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#beranda">Beranda</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#rute">Rute</a>
+            <a href="#armada">Armada</a>
+            <a href="#pesan">Pesan Tiket</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="beranda">
+        <div class="container">
+            <div class="badge-24jam"><i class="fas fa-clock"></i> LAYANAN 24 JAM — SETIAP HARI</div>
+            <h1>YUSEP TOUR & TRAVEL<br>Perjalanan <span>Aman, Nyaman & Tepat Waktu</span></h1>
+            <p>Melayani rute harian: Pangandaran, Banjarsari, Tasikmalaya, Bandung hingga Jakarta & seluruh Jawa-Bali.
+                Antar-jemput alamat GRATIS!</p>
+            <a href="#pesan" class="btn btn-primary">Pesan Tiket Sekarang</a>
+            <a href="#rute" class="btn btn-outline">Lihat Semua Rute</a>
+        </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="layanan">
+        <div class="container">
+            <div class="section-head">
+                <h2>Layanan Kami</h2>
+                <p>Berbagai pilihan layanan siap melayani Anda kapan saja — 24 jam non-stop setiap hari</p>
+            </div>
+            <div class="layanan-wrap">
+                <div class="layanan-card">
+                    <i class="fas fa-van-shuttle"></i>
+                    <h3>Travel Antar Kota</h3>
+                    <p>Jadwal harian rute tetap ke seluruh kota besar Jawa & Bali dengan armada bersih dan terawat.</p>
+                </div>
+                <div class="layanan-card">
+                    <i class="fas fa-house-user"></i>
+                    <h3>Antar-Jemput Alamat</h3>
+                    <p>Jemput & antar langsung di depan rumah/alamat tujuan Anda — tanpa biaya tambahan.</p>
+                </div>
+                <div class="layanan-card">
+                    <i class="fas fa-plane-departure"></i>
+                    <h3>Antar Bandara Soetta</h3>
+                    <p>Layanan khusus ke/dari Bandara Soekarno-Hatta — dijamin tepat waktu dengan jadwal fleksibel.</p>
+                </div>
+                <div class="layanan-card">
+                    <i class="fas fa-box"></i>
+                    <h3>Kirim Paket & Dokumen</h3>
+                    <p>Layanan pengiriman paket kilat ikut perjalanan — cepat, aman, dan harga terjangkau.</p>
+                </div>
+                <div class="layanan-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Rombongan & Wisata</h3>
+                    <p>Melayani perjalanan rombongan keluarga, instansi, sekolah, wisata — sesuaikan permintaan Anda.
+                    </p>
+                </div>
+                <div class="layanan-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Siap Melayani 24 Jam</h3>
+                    <p>Senin–Minggu, Hari Libur tetap buka — pemesanan & perjalanan kapan saja siang maupun malam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rute -->
+    <section id="rute" class="rute-section">
+        <div class="container">
+            <div class="section-head">
+                <h2>Rute Perjalanan</h2>
+                <p>Daftar rute lengkap — antar-jemput alamat sudah termasuk dalam harga</p>
+            </div>
+
+            <div class="rute-tabs">
+                <div class="rute-tab active" data-tab="pangandaran">🏖️ Pangandaran</div>
+                <div class="rute-tab" data-tab="banjarsari">🏡 Banjarsari</div>
+                <div class="rute-tab" data-tab="tasik">🌆 Tasikmalaya</div>
+                <div class="rute-tab" data-tab="bandung">🏔️ Bandung</div>
+                <div class="rute-tab" data-tab="jakarta">🏙️ Jakarta — Luar Jawa</div>
+            </div>
+
+            <!-- PANGANDARAN -->
+            <div class="rute-content active" id="pangandaran">
+                <div class="rute-grid">
+                    <div class="rute-item"><span>Pangandaran ➡️ Bandung</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Pangandaran ➡️ Majalengka</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Pangandaran ➡️ Cirebon</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Pangandaran ➡️ Indramayu</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Pangandaran ➡️ Jakarta</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Pangandaran ➡️ Bekasi</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Pangandaran ➡️ Depok</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Pangandaran ➡️ Bogor</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Pangandaran ➡️ Tangerang</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Pangandaran ➡️ Bandara Soetta</span><span>Tersedia</span></div>
+                </div>
+            </div>
+
+            <!-- BANJARSARI -->
+            <div class="rute-content" id="banjarsari">
+                <div class="rute-grid">
+                    <div class="rute-item"><span>Banjarsari ➡️ Bandung</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Banjarsari ➡️ Jakarta</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Banjarsari ➡️ Bekasi</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Banjarsari ➡️ Depok</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Banjarsari ➡️ Bogor</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Banjarsari ➡️ Tangerang</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Banjarsari ➡️ Bandara Soetta</span><span>Tersedia</span></div>
+                </div>
+            </div>
+
+            <!-- TASIKMALAYA -->
+            <div class="rute-content" id="tasik">
+                <div class="rute-grid">
+                    <div class="rute-item"><span>Tasikmalaya ➡️ Bandung</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Tasikmalaya ➡️ Cirebon</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Tasikmalaya ➡️ Indramayu</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Tasikmalaya ➡️ Jakarta</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Tasikmalaya ➡️ Bekasi</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Tasikmalaya ➡️ Depok</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Tasikmalaya ➡️ Bogor</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Tasikmalaya ➡️ Tangerang</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Tasikmalaya ➡️ Bandara Soetta</span><span>Tersedia</span></div>
+                </div>
+            </div>
+
+            <!-- BANDUNG -->
+            <div class="rute-content" id="bandung">
+                <div class="rute-grid">
+                    <div class="rute-item"><span>Bandung ➡️ Jakarta</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Bandung ➡️ Bekasi</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Bandung ➡️ Depok</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Bandung ➡️ Bogor</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Bandung ➡️ Tangerang</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Bandung ➡️ Bandara Soetta</span><span>Tersedia</span></div>
+                </div>
+            </div>
+
+            <!-- JAKARTA & LUAR JAWA -->
+            <div class="rute-content" id="jakarta">
+                <div class="rute-grid">
+                    <div class="rute-item"><span>Jakarta ➡️ Semarang</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Jakarta ➡️ Jogja</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Jakarta ➡️ Surabaya</span><span>Tersedia</span></div>
+                    <div class="rute-item"><span>Jakarta ➡️ Bali</span><span>Tersedia</span></div>
+                </div>
+                <p style="text-align:center; margin-top:20px; color:#64748B; font-style:italic;">📌 Rute ke luar Jawa —
+                    hubungi kami untuk jadwal & tarif lengkap</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Armada -->
+    <section id="armada">
+        <div class="container">
+            <div class="section-head">
+                <h2>Galeri Armada</h2>
+                <p>Beragam pilihan kendaraan — bersih, ber-AC dingin, & terawat secara rutin</p>
+            </div>
+            <div class="armada-wrap">
+                <div class="armada-card">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=500" alt="Toyota Hiace">
+                    <div class="armada-info">
+                        <h3>Toyota Hiace</h3>
+                        <p>Eksekutif • Luas • Nyaman</p>
+                    </div>
+                </div>
+                <div class="armada-card">
+                    <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500"
+                        alt="Isuzu Elf Premium">
+                    <div class="armada-info">
+                        <h3>Isuzu Elf Premium</h3>
+                        <p>AC Dingin • Kursi Reclining</p>
+                    </div>
+                </div>
+                <div class="armada-card">
+                    <img src="https://images.unsplash.com/photo-1503376780359-7e918c0196d5?w=500" alt="Toyota Avanza">
+                    <div class="armada-info">
+                        <h3>Toyota Avanza</h3>
+                        <p>Privat • Cepat • Fleksibel</p>
+                    </div>
+                </div>
+                <div class="armada-card">
+                    <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=500" alt="Toyota Cayla">
+                    <div class="armada-info">
+                        <h3>Toyota Cayla</h3>
+                        <p>AC • Praktis • Bersih</p>
+                    </div>
+                </div>
+                <div class="armada-card">
+                    <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=500" alt="Daihatsu Sigra">
+                    <div class="armada-info">
+                        <h3>Daihatsu Sigra</h3>
+                        <p>AC • Ekonomis • Tepat Waktu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Pemesanan -->
+    <section id="pesan" class="pesan-section">
+        <div class="container">
+            <div class="section-head">
+                <h2>Form Pemesanan Tiket</h2>
+                <p>Isi data berikut — pesanan akan otomatis masuk ke WhatsApp kami</p>
+            </div>
+            <div class="form-wrap">
+                <form id="formPesan">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nama Lengkap *</label>
+                            <input type="text" id="nama" required placeholder="Masukkan nama lengkap Anda">
+                        </div>
+                        <div class="form-group">
+                            <label>No. WhatsApp *</label>
+                            <input type="tel" id="nowa" required placeholder="Contoh: 0813xxxxxxx">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Alamat Jemput *</label>
+                            <input type="text" id="dari" required placeholder="Alamat lengkap penjemputan">
+                        </div>
+                        <div class="form-group">
+                            <label>Tujuan *</label>
+                            <input type="text" id="tujuan" required placeholder="Alamat lengkap tujuan">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Tanggal & Jam Berangkat *</label>
+                            <input type="datetime-local" id="tanggal" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Jumlah Penumpang *</label>
+                            <select id="jumlah" required>
+                                <option value="">Pilih jumlah</option>
+                                <option value="1">1 Orang</option>
+                                <option value="2">2 Orang</option>
+                                <option value="3">3 Orang</option>
+                                <option value="4">4 Orang</option>
+                                <option value="5">5 Orang</option>
+                                <option value="6+">6 Orang ke atas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Pilih Armada</label>
+                            <select id="armada">
+                                <option value="Sesuai Ketersediaan">Sesuai Ketersediaan</option>
+                                <option value="Toyota Hiace">Toyota Hiace</option>
+                                <option value="Isuzu Elf Premium">Isuzu Elf Premium</option>
+                                <option value="Toyota Avanza">Toyota Avanza</option>
+                                <option value="Daihatsu Cayla">Daihatsu Cayla</option>
+                                <option value="Daihatsu Sigra">Daihatsu Sigra</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Metode Pembayaran</label>
+                            <select id="pembayaran">
+                                <option value="Transfer Bank">Transfer Bank</option>
+                                <option value="E-Wallet">E-Wallet (DANA, OVO, GoPay, dll)</option>
+                                <option value="Tunai">Bayar Tunai Saat Dijemput</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group full">
+                        <label>Catatan Tambahan</label>
+                        <textarea id="catatan" rows="3" placeholder="Permintaan khusus, barang bawaan, dll."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fab fa-whatsapp"></i> KIRIM PESANAN KE WHATSAPP
+                    </button>
+                </form>
+
+                <!-- Metode Pembayaran -->
+                <div class="pembayaran-wrap">
+                    <div class="pembayaran-card">
+                        <i class="fas fa-university"></i>
+                        <h4>Transfer Bank</h4>
+                        <p>Kirim bukti ke WhatsApp</p>
+                    </div>
+                    <div class="pembayaran-card">
+                        <i class="fas fa-wallet"></i>
+                        <h4>E-Wallet</h4>
+                        <p>DANA, OVO, GoPay, dll</p>
+                    </div>
+                    <div class="pembayaran-card">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h4>Bayar Tunai</h4>
+                        <p>Saat dijemput pengemudi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak & Alamat -->
+    <section id="kontak">
+        <div class="container">
+            <div class="section-head">
+                <h2>Kontak & Alamat</h2>
+                <p>Hubungi kami kapan saja — kami siap melayani 24 jam setiap hari</p>
+            </div>
+            <div class="kontak-wrap">
+                <div class="kontak-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Alamat Kantor</h3>
+                    <p>Jln. Sindanghayu, Dusun Sukamaju RT 02 RW 01, Desa Banjarsari, Kecamatan Banjarsari, Kabupaten
+                        Ciamis — Jawa Barat<br><strong>Kode Pos: 46383</strong></p>
+                </div>
+                <div class="kontak-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/6281322601601" target="_blank"
+                            style="color: var(--secondary); font-weight: 600; font-size:17px;">+62 813-2260-1601</a></p>
+                    <p style="margin-top: 8px; font-size: 13px; color:#64748B;">Respon otomatis: Hallo Yusep Tour And
+                        Travel, Saya mau tanya info Travel?</p>
+                </div>
+                <div class="kontak-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Jam Operasional</h3>
+                    <p>Senin — Minggu<br><strong>24 Jam Non-Stop</strong><br>Termasuk Hari Libur Nasional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3 style="font-size: 20px;">YUSEP TOUR & TRAVEL</h3>
+            <p>Travel Terpercaya — Pangandaran • Banjarsari • Tasikmalaya • Bandung</p>
+            <p>&copy; 2026 YUSEP TOUR & TRAVEL. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Melayang -->
+    <a href="https://wa.me/6281322601601?text=Hallo%20Yusep%20Tour%20And%20Travel%2C%20Saya%20mau%20tanya%20info%20Travel%3F"
+        target="_blank" class="wa-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Script -->
+    <script>
+        // Mobile Menu
+        const menuBtn = document.getElementById('menuToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        menuBtn.addEventListener('click', () => {
+            mobileNav.style.display = mobileNav.style.display === 'block' ? 'none' : 'block';
+        });
+        mobileNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileNav.style.display = 'none');
+        });
+
+        // Rute Tabs
+        const tabs = document.querySelectorAll('.rute-tab');
+        const contents = document.querySelectorAll('.rute-content');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+            });
+        });
+
+        // Form Kirim ke WhatsApp
+        document.getElementById('formPesan').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const nama = document.getElementById('nama').value;
+            const nowa = document.getElementById('nowa').value;
+            const dari = document.getElementById('dari').value;
+            const tujuan = document.getElementById('tujuan').value;
+            const tanggal = document.getElementById('tanggal').value;
+            const jumlah = document.getElementById('jumlah').value;
+            const armada = document.getElementById('armada').value;
+            const pembayaran = document.getElementById('pembayaran').value;
+            const catatan = document.getElementById('catatan').value || '-';
+
+            const pesan = `📋 PEMESANAN TIKET — YUSEP TOUR & TRAVEL
+
+👤 Nama: ${nama}
+📞 WhatsApp: ${nowa}
+📍 Dari: ${dari}
+🎯 Tujuan: ${tujuan}
+📅 Tanggal/Jam: ${tanggal}
+👥 Jumlah Penumpang: ${jumlah} Orang
+🚗 Armada: ${armada}
+💳 Pembayaran: ${pembayaran}
+
+📝 Catatan: ${catatan}
+
+Mohon konfirmasi ketersediaan & total biaya perjalanan. Terima kasih! — YUSEP TOUR & TRAVEL`;
+
+            window.open(`https://wa.me/6281322601601?text=${encodeURIComponent(pesan)}`, '_blank');
+            this.reset();
+        });
+    </script>
+
+</body>
+
+</html>
